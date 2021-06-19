@@ -883,23 +883,35 @@ img {
   color: var(--primary-text-color);
 }
 
-.modal-form-checkbox:checked + .modal-form-check {
+.modal-form-check:checked + .modal-check {
   background-color: var(--link-color);
   border-color: var(--link-color);
   fill: #fff;
 }
 
-.icon-check {
+.modal-check {
   position: absolute;
-  top: 3px;
-  left: 10px;
-  display: block;
   width: 16px;
   height: 15px;
+  top: 3px;
+  left: 12px;
+  display: block;
+  justify-content: center;
+  align-items: center;
   border: 3px solid #212121;
   border-radius: 2px;
   margin-right: 9px;
   background-color: #fff;
+}
+
+.icon-check {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 8px;
+  fill: #fff;
 }
 .checkbox-modal {
   position: relative;
